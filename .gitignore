@@ -1,0 +1,41 @@
+# Git Ignore Rules
+
+.DS_Store
+*.class
+*.log
+*.pyc
+*.tap
+logs/
+
+bde_warehouse/
+spark-warehouse/
+target/
+project/boot/
+project/plugins/project/
+
+node_modules/
+
+
+# Scala-IDE
+.scala_dependencies
+
+# IDEA User Configuration
+tasks.xml
+workspace.xml
+*.iml
+*.iws
+.idea
+# Local Resources
+
+# Local Hive Metastore DB
+metastore_db/
+
+# Microsoft Office Temporary Files
+~$*.???x
+codeStyleSettings.xml
+dependency-reduced-pom.xml
+
+libraries/
+python/.ipynb_checkpoints/
+transform/spark-warehouse/
+
