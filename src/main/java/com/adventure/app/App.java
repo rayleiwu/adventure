@@ -121,11 +121,11 @@ public class App {
 		//int i = 3;	System.out.println(i/2);
 		
 		// runHowTo();
-		 runBit();
+		// runBit();
 		// runDc();
 		// runDp();
 		// runGreedy();
-		// runHashing();
+		 runHashing();
 		// runLl();
 		// runRecursion();
 		// runSort();
@@ -212,7 +212,7 @@ public class App {
 		long l = TinyUrl.Decode(url);
 		String s = TinyUrl.Encode(l);
 		
-		l = 9999999999L;
+		//l = 9999999999L;
 		s = TinyUrl.Encode(l);
 		l = TinyUrl.Decode(s);
 		
@@ -894,8 +894,7 @@ public class App {
 	
 	private static void runDp() {
 		showCategory("Dynamic Programming");
-		
-		/*
+
 		int l = 8;
 		int r = RodCutting.MemoziedCut(l);
 		System.out.printf("Max profit of length of %d is %d:\n", l, r);
@@ -907,8 +906,7 @@ public class App {
 		
 		System.out.printf("Knapsack problem with weight capacity:\n", w);
 		Knapsack.Calculate(w);
-		*/
-		
+
 		String A = "acbaed", B = "abcadf";
 		System.out.printf("LCS('%s','%s') = '%s'", A, B, LCS.find(A,B));
 		
@@ -982,11 +980,11 @@ public class App {
 		String s = IntToBit.convert(num);
 		System.out.printf("Int %d = Bit %s", num, s);
 		
-		char c = 'a';
-		c ^= 256;
-		System.out.println(c);
-		c ^= 256;
-		System.out.println(c);
+//		char c = 'a';
+//		c ^= 256;
+//		System.out.println(c);
+//		c ^= 256;
+//		System.out.println(c);
 		
 	}
 	

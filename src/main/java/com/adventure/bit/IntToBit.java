@@ -7,7 +7,7 @@ public class IntToBit {
 		
 		//System.out.println(String.format("%32s", Integer.toBinaryString(num)).replace(" ", "0"));
 		
-		for(int i=31;i>=0;i--) {
+		for(int i=0;i<=31;i++) {
 			
 			//System.out.println(String.format("%32s", Integer.toBinaryString(mask)).replace(" ", "0"));
 			

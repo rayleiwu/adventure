@@ -1,9 +1,11 @@
-package com.adventure.dc;
+package com.adventure.dc; // divid and conquer
 
 import com.adventure.util.MaxObject;
 
+// https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 public class MaxSum {
-	
+
+    // this is a good one! Idea is simple: keep adding the difference and record the max profit as you go!
 	public Integer maxProfit_quick(int[] a) {
 		
 		// input validation

@@ -40,7 +40,7 @@ public class RodCutting {
 	}
 	
 	
-	// version 2: bottom-up. Solve small problem first.
+	// version 2: bottom-up. Solve small problem first. -- GOOD ONE!
 	public static int BottomUpCut(int n) {
 		int[] r = new int[n + 1]; // store computed max profit for size 0 to n
 
