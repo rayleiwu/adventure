@@ -19,6 +19,7 @@ public class KthSmallestInBST {
 	 public static int kthSmallest(TNode root, int k) {
 	        Stack<TNode> st = new Stack<>();
 
+            // always stay on the left!
 	        TNode n0 = root;
 	        while (n0 != null) {
 	            st.push(n0);
@@ -29,12 +30,13 @@ public class KthSmallestInBST {
 	        	TNode n = st.pop();
 	            
 	        	k--;
-	            
+
+                // This line is the only amendment!
 	            if (k == 0) return n.getData();
 
+                // always stay on the left!
 				n0 = n.getRight();
-	            
-	            while (n0 != null) { // This line is the only amendment!
+	            while (n0 != null) {
 	                st.push(n0);
 					n0 = n0.getLeft();
 	            }
